@@ -8,7 +8,7 @@ def get_birthdays_per_week(users):
     cur_day_idx = cur_day.weekday() 
     last_day = cur_day + timedelta(days=7)
     res = defaultdict(list)
-    print("Cur weekday", cur_day.weekday(), "last weekday:", last_day.weekday(), last_day)
+    #print("Cur weekday", cur_day.weekday(), "last weekday:", last_day.weekday(), last_day)
     for user in users:
         name = user["name"]
         birthday = user["birthday"]
